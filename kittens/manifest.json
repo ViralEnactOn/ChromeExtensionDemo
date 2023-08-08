@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome Extension for Kittens",
+  "version": "0.1",
+  "web_accessible_resources": ["kitten/*.jpg"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["kitten.js"]
+    }
+  ]
+}
